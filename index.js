@@ -105,3 +105,119 @@ let number = 1;
 console.log(number++);
 console.log(++number);
 console.log(number);
+
+
+//Operators
+ let number1 = 2500;
+ let number2 = 500;
+
+ console.log(number1 + number2);
+
+ console.log(number1 - number2);
+
+ console.log(number1 * number2);
+
+ console.log(number1 / number2);
+
+ console.log(number1 ** number2);
+
+ console.log(number1 % number2);
+
+
+
+ //Conditional Statement
+
+ let key = 0;
+ if(key == 0) {
+    console.log("Bualaa!")
+ } else if(key == 1) {
+    console.log("Burst!")
+ } else {
+    console.log("!")
+ }
+
+
+
+ let color = 'white';
+
+ switch (color){
+    case 'black':
+        console.log("Black");
+        break;
+
+    case 'white':
+        console.log("White");
+        break;
+ }
+
+
+ //Ternary Operator
+
+ let operator1 = 10;
+ let operator2 = 20;
+
+ let maxValue = 0;
+
+ if(operator1 > operator2){
+    maxValue = operator1;
+ } else {
+    console.log(maxValue);
+ }
+
+ //in ternary
+ let max = operator1 > operator2 ? operator1 : operator2;
+ console.log(max);
+
+
+
+ //Concatenate
+ let m1 = "Hi ";
+ let m2 = "My name is ";
+ let m3 = "Leonard";
+
+ let m = m1.concat(m2,m3); //or m1 + m2 + m3;
+ console.log(m);
+
+ //Splitting 
+
+ let message = "Hi My name is Leonard";
+
+console.log(message.split(' '));
+
+
+
+//Objects
+
+const userObj = {
+    name: "Leonard", 
+    age: 30, 
+    location: "Nairobi, Kenya",
+    isMarried: true,
+    friends: ['Leon', 'John', 'Tim'],
+    selectColor: null,
+    calculateAge: function(){
+        console.log(`I am leonard ${this.age} old`);
+    }
+};
+
+console.log(userObj);
+console.log(userObj.age); //or console.log(userObj['name']);
+console.log(userObj.location);
+
+
+//Object Manipulation 
+//Add
+userObj.email = "codzure@gmail.com";
+userObj['phone'] = '0797035510';
+
+//Update
+userObj.isMarried = false;
+userObj.age = 45;
+
+//Delete
+//delete userObj.age;
+
+//Function
+userObj.calculateAge();
+
+
