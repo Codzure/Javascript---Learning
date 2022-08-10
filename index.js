@@ -221,3 +221,62 @@ userObj.age = 45;
 userObj.calculateAge();
 
 
+//Transversing Object
+
+const userDetails = {
+    name: 'Leonard',
+    age: 45,
+    gender: 'male',
+    phone: '0797035510',
+    email: 'codzure@gmail.com',
+};
+
+
+//One way
+
+for (let key in userDetails){
+    console.log(key, userDetails[key]);
+}
+
+//Two Way
+console.log(Object.keys(user));
+console.log(Object.values(user));
+
+
+//Transversing Object Exercises
+
+const salaries = {
+    Kazi: 40000,
+    Sam: 10000,
+    Kim: 70000,
+    Timmy: 20000,
+    Success: 24000,
+};
+
+let summation = 0;
+
+
+for (let key in salaries){
+    console.log(key, salaries);
+    summation = summation + salaries[key];
+}
+console.log(summation);
+
+
+
+//JSON FORMAT Data
+
+const data = {
+    name: 'Leonard',
+    age: 40,
+}
+
+//Change data to JSON
+const jsonData = JSON.stringify(data);
+console.log(jsonData);
+
+//Change JSON to Object
+
+console.log(JSON.parse(jsonData));
+
+
